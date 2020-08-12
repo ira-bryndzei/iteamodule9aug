@@ -1,4 +1,3 @@
-# footgo.yml
 version: "3.8"
 services:
   zabbix-mysql:
@@ -119,3 +118,7 @@ networks:
       driver: default
       config:
       - subnet: 172.16.231.0/24
+  elastic:
+  logstach:
+    image: logstash:3.0.0
+  kibana:
